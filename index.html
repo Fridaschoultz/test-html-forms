@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>HTML Forms</h2>
+  <h2>Contact Us</h2>
+<form>   
+  <fieldset>
+    <legend> Your message: </legend>
+    <table>
+      <tr>
+        <td> <label for=”emailTo”> To </label> </td>
+        <td> <input type=”text” name=”txtTo”  id=”emailTo” value="Company"/> </td>
+      </tr>
+  
+      <table>
+        <td> <label for=”emailFrom”> Your email </label> </td>
+        <td> <input type=”text” name=”txtFrom” id=”emailFrom”  /> </td>
+      </table>
+  
+      <tr>
+        <td> <label for=”emailBody”> Message </label> </td>
+        <td> <textarea name=”txtBody” id=”emailBody” cols=”50” rows=”10” tabindex=”2”> </textarea> </td>
+      </tr>
+  
+    </table>
+  </fieldset>
+  
+  <fieldset>
+    <legend> How you found us: </legend>
+    <table>
+      <tr>
+        <td> <label for=”emailBody”> How did you hear of us </label> </td>
+        <td>
+          <select name=”selReferrer”>
+            <option value=”google”> Google </option>
+            <option value=”ad”>Facebook</option>
+            <option value=”friend”>Instagram</option>
+            <option value=”other”>LinkedIn</option>
+            <option value=”other”>Friend</option>
+          </select>
+        </td>
+      </tr>
+  
+      <tr>
+        <td><label for=”newsletterSignup”> Newsletter </label></td>
+        <td> <input type=”checkbox” name=”chkBody” id=”newsletterSignup” checked=”checked” /> For our weekly updates
+       </td>
+      </tr>
+
+      <tr>
+        <tr>
+          <td> <label for=”emailBody”> Rate our site</label> </td>
+        </tr>
+        <td>
+          <input type="radio" id="rate1" name="rate_site" value="1">
+            <label for="rate1">1</label><br>
+            <input type="radio" id="rate2" name="rate_site" value="2">
+            <label for="rate2">2</label><br>
+            <input type="radio" id="rate3" name="rate_site" value="3">
+            <label for="rate3">3</label>
+        </td>
+        </tr>
+    </table>
+  </fieldset> <br>
+  <button>Send Message</button>
+</form>
+
+
+
+</body>
+</html>
+
+

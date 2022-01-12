@@ -5,43 +5,90 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>HTML Formulär och Tabeller</title>
+
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+
 </head>
+<h2>HTML Forms</h2>
 
-<body>
-  <h2>HTML Forms</h2>
+<form>
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" value="Förnamn" /><br />
+  <label for="lname">Last name:</label><br />
+  <input type="text" id="lname" name="lname" value="Efternamn" /><br /><br />
+  <input type="submit" value="Submit" />
+</form>
 
-  <form action="/action_page.php">
-    <label for="fname">First name:</label><br/>
-    <input type="text" id="fname" name="fname" value="John"/><br />
-    <label for="lname">Last name:</label><br/>
-    <input type="text" id="lname" name="lname" value="Doe"/><br/><br/>
-    <input type="submit" value="Submit"/>
-  </form>
-
-  <h2>HTML Forms</h2>
-  <fieldset>
-    <form action="/action_page.php">
-      <label for="fname">First name:</label><br/>
-      <input type="text" id="fname" name="fname" value="John"/><br/>
-      <label for="lname">Last name:</label><br/>
-      <input type="text" id="lname" name="lname" value="Doe"/><br/><br/>
-      <input type="submit" value="Submit"/>
-    </form>
-  </fieldset>
-
-  <h2>Radio Buttons</h2>
-
-  <p>Choose your favorite Web language:</p>
-
+<h2>HTML Forms med Fieldset och Legend</h2>
+<fieldset>
+  <legend> Ditt Meddelande:</legend>
   <form>
-    <input type="radio" id="html" name="fav_language" value="HTML"/>  
-    <label for="html">HTML</label><br/>
-    <input type="radio" id="css" name="fav_language" value="CSS"/>  
-    <label for="css">CSS</label><br/>
-    <input type="radio" id="javascript" name="fav_language" value="JavaScript"/>
-    <label for="javascript">JavaScript</label>
+    <label for="fname">First name:</label><br />
+    <input type="text" id="fname" name="fname" value="Förnamn" /><br />
+    <label for="lname">Last name:</label><br />
+    <input type="text" id="lname" name="lname" value="Efternamn" /><br /><br />
+    <input type="submit" value="Submit" />
   </form>
+</fieldset>
+
+<h2>Textarea- input fält du kan ändra storlek på</h2>
+
+<label for=”textBody”>Meddelande</label> <br />
+<textarea name=”txtBody” id=”textBody” cols=”50” rows=”10”> </textarea>
+
+
+<h2>Radio Buttons</h2>
+
+<p>Välj färg:</p>
+
+<form>
+  <input type="radio" id="blue" name="blue" value="blue" />  
+  <label for="blue">Blue</label><br />
+  <input type="radio" id="red" name="red" value="red" />  
+  <label for="red">Red</label><br />
+  <input type="radio" id="green" name="green" value="Green" />
+  <label for="green">Green</label>
+</form>
+
+<h2>Drop down menu with select and option</h2>
+<form>
+  <label for="fruit">Välj en frukt:</label>
+  <select id="fruit" name="fruits">
+    <option value="apple">Äpple</option>
+    <option value="banana">Banan</option>
+    <option value="orange">Apelsin</option>
+    <option value="kiwi">Kiwi</option>
+  </select>
+  <input type="submit">
+</form>
+
+<h2>En enkel tabell - vi har lite styling längts upp för att göra tabellen tydligare</h2>
+
+<table>
+  <tr>
+    <th>SuperHero</th>
+    <th>Adress</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Iron man</td>
+    <td>Hollywood</td>
+    <td>USA</td>
+  </tr>
+  <tr>
+    <td>Captain Marvel</td>
+    <td>Space</td>
+    <td>Universe</td>
+  </tr>
+</table>
+<br /><br /><br />
 </body>
 
 </html>
